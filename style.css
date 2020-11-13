@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-title {
+    margin: 5rem;
+    font-size: 3rem;
+}
+
+.todo-input {
+    height: 3rem;
+    width: 30%;
+    padding: 0 1rem;
+    border: none;
+    border-bottom: 2px solid rgb(194, 194, 194);
+}
+
+.todo-input:focus {
+    outline: none;
+}
+
+.todo-button {
+    margin: 3rem 0;
+    padding: 1rem;
+    width: 8rem;
+    border: none;
+    background: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.todo-button:focus {
+    outline: none;
+}
+
+.todo-list {
+
+}
+
+.item-div {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 3rem;
+    margin: 1rem 0;
+    background: rgb(96, 197, 180);
+    color: white;
+    width: 50vw;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+}
+
+button {
+    background: rgb(223, 75, 75);
+    padding: 3rem;
+    margin: 1rem 1rem;
+    color: white;
+    width: 20vw;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+@media only screen and (max-width: 670px) {
+
+    .todo-title {
+        margin-top: 5rem;
+        font-size: 1.75rem;
+    }
+    
+    .todo-input {
+        height: 3rem;
+        width: 75%;
+        padding: 0 1rem;
+        border: none;
+        border-bottom: 2px solid rgb(194, 194, 194);
+    }
+    
+    .todo-button {
+        margin: 3rem 0;
+        padding: 1rem;
+        width: 8rem;
+        border: none;
+        background: cornflowerblue;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .todo-list {
+    
+    }
+    
+    .item-div {
+        flex-direction: column;
+        margin: 2rem 0;
+        border-radius: 5px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    }
+    
+    li {
+        list-style: none;
+        padding: 1rem;
+        margin: .5rem 0;
+        background: rgb(255, 255, 255);
+        color: rgb(73, 73, 73);
+        width: 80vw;
+        border-radius: 5px 5px 5px 5px;
+        text-align: center;
+    }
+    
+    button {
+        background: rgb(230, 82, 82);
+        padding: 1rem;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        width: 80vw;
+        border-radius: 0px 0px 5px 5px;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+    }
+
+}
