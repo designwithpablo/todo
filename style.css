@@ -54,9 +54,9 @@ body {
 
 li {
     list-style: none;
-    padding: 3rem;
+    padding: 1.75rem;
     margin: 1rem 0;
-    background: rgb(96, 197, 180);
+    background: rgb(32, 32, 32);
     color: white;
     width: 50vw;
     border-radius: 5px 0 0 5px;
@@ -64,8 +64,8 @@ li {
 }
 
 button {
-    background: rgb(223, 75, 75);
-    padding: 3rem;
+    background: cornflowerblue;
+    padding: 1.75rem;
     margin: 1rem 1rem;
     color: white;
     width: 20vw;
@@ -88,6 +88,7 @@ button {
         padding: 0 1rem;
         border: none;
         border-bottom: 2px solid rgb(194, 194, 194);
+        text-align: center;
     }
     
     .todo-button {
@@ -101,15 +102,10 @@ button {
         cursor: pointer;
     }
     
-    .todo-list {
-    
-    }
-    
     .item-div {
         flex-direction: column;
         margin: 2rem 0;
         border-radius: 5px;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
     }
     
     li {
@@ -129,7 +125,8 @@ button {
         margin: 0;
         color: rgb(255, 255, 255);
         width: 80vw;
-        border-radius: 0px 0px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
         text-align: center;
         cursor: pointer;
         border: none;
