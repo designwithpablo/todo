@@ -13,8 +13,28 @@ body {
 }
 
 .todo-title {
-    margin: 5rem;
+    margin-top: 5rem;
     font-size: 3rem;
+    text-align: center;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.month {
+    margin-right: .5rem;
+}
+
+.day {
+    margin-right: .5rem;
+}
+
+.day-number {
+
 }
 
 .todo-input {

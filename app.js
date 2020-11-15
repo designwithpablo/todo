@@ -7,6 +7,10 @@ const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 const todoItem = document.querySelectorAll('li');
+const monthInput = document.querySelector('.month');
+const dayInput = document.querySelector('.day');
+const numberOfDay = document.querySelector('.day-number');
+const newDate = new Date();
 
 
 // Functions ---------------------------------------------
@@ -160,21 +164,101 @@ function removeLocalTodos(todo) {
 
 }
 
+function getDate() {
+    
+    const month = newDate.getMonth();
+    const day = newDate.getDay();
+    const dayNumber = newDate.getDate();
+
+    console.log(dayNumber);
+
+
+    
+    switch (month) {
+        case 0:
+            monthInput.innerText = 'January';
+            break;
+        case 1:
+            monthInput.innerText = 'February';
+            breakp;
+        case 2:
+            monthInput.innerText = 'March';
+            break
+        case 3:
+            monthInput.innerText = 'April';
+            break;
+        case 4:
+            monthInput.innerText = 'May';
+            break;
+        case 5:
+            monthInput.innerText = 'June';
+            break;
+        case 6:
+            monthInput.innerText = 'July';
+            break;
+        case 7:
+            monthInput.innerText = 'August';
+            break;
+        case 8:
+            monthInput.innerText = 'September';
+            break;
+        case 9:
+            monthInput.innerText = 'October';
+            break;
+        case 10: 
+            monthInput.innerText = 'November';
+            break;
+        case 11:
+            monthInput.innerText = 'December'
+    }
+
+    switch (day) {
+        case 0:
+            dayInput.innerText = 'Sunday,';
+            break;
+        case 1:
+            dayInput.innerText = 'Monday,';
+            break;
+        case 2:
+            dayInput.innerText = 'Tuesday,';
+            break;
+        case 3:
+            dayInput.innerText = 'Wednesday,';
+            break;
+        case 4:
+            dayInput.innerText = 'Thursday,';
+            break;
+        case 5:
+            dayInput.innerText = 'Friday,';
+            break;
+        case 6:
+            dayInput.innerText = 'Saturday,';
+    }
+
+    numberOfDay.innerText = dayNumber;
+
+}
+
 
 // Event listeners -------------------------------------
 
+// This is to retrieve the todos from localStorage and display them on the screen
 document.addEventListener('DOMContentLoaded', function() {
     getTodos();
+    getDate();
 })
 
+// This is to add an event listener from a click on the mouse
 todoButton.addEventListener('click', function() {
     addTodoClick();
 })
 
+// This is to add an event listener from the enter key
 todoInput.addEventListener('keydown', function(e) {
     addTodoEnter(e);
 }) 
 
+// This is to delete an item
 todoList.addEventListener('click', function(e) {
     deleteItem(e);
 })
